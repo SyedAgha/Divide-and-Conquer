@@ -1,0 +1,38 @@
+This the the code for our paper 'DCS: Divide and Conquer Strategy For Detecting Overlapping Communities in Social Graphs'. The paper is currently 
+under submission at KDD 2016. 
+Copyright (C) 2016, Syed Agha Muhammad and Kristof Van Laerhoven
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+Our paper is also in the folder. The folder contains following five python files:
+
+1) launch_DCS.py
+This file contains some basic commands and executes the code. Execute this file to get the results. All the results will be stored in the communities file in this folder. We have also added comments in the code for the reader's convenience.  
+2) local_centrality.py
+This file contains the code for local centrality.
+3) leader_selection
+This file contains the code for leader selection.
+4) community.py
+This file contains the code for our community detection technique.
+5) merging_function.py
+The file contains the code to merge a list into a dictionary given it has epsilon greater than the specified value. 
+
+The folder also contains the datasets. Please check the origional sources of the datasets, as none is ours. 
+To run the code, you need networkx and numpy. Run this code using command below:
+
+python launch_DCS.py -f dataset_name (e.g. python launch_DCS.py -f imdb, python launch_DCS.py -f roadnet.txt, 
+python launch_DCS.py -f amazon.txt) 
+ 
+
